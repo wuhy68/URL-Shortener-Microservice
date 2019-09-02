@@ -17,7 +17,7 @@ var port = process.env.PORT || 3000;
 
 /** this project needs a db !! **/ 
 // mongoose.connect(process.env.MONGOLAB_URI);
-mongoose.connect(process.env.MONGO_URL, {useNewUrlParser: True})
+mongoose.connect(process.env.MONGO_URI, {useNewUrlParser: true})
   .then(() => console.log('connection successfully'))
   .catch((err) => console.error(err));
 
