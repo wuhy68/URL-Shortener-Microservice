@@ -52,7 +52,7 @@ app.route("/api/shorturl/new")
         if(err) console.log(err);
         else{
           var linkList = data.map((obj) => {
-            obj.shortUrl
+            return obj.shortUrl
           });
           var newLink = Math.round(Math.random()*10000)
 
